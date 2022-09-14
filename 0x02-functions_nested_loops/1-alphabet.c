@@ -1,7 +1,4 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 /**
  *
  *print_alphabet - function to print abc
@@ -12,10 +9,11 @@
 
 void print_alphabet(void)
 {
-	char c;
+int n;
 
-	for (c = 'a'; c<= 'z'; c++)
-		_putchar(c);
-
-	_putchar('\n');
+for (n = 'a'; n<= 'z'; n++)
+{	
+_putchar(n);
+}
+_putchar('\n');
 }

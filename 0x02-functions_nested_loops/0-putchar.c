@@ -1,20 +1,15 @@
-#include <unistd.h>
-#include <main.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 /*
- * main -  Check description
- * Description: It prints the word _putchar, followed by a new line.
- * Return: 0.
+ * main -  Entry point
+ *Return - always success
  *
  */
 int main(void)
 {
-	_putchar('_');
-	_putchar('p');
-	_putchar('u');
-	_putchar('t');
-	_putchar('c');
-	_putchar('h');
-	_putchar('a');
-	_putchar('r');
+	printf("_putchar\n");
+
 	return (0);
 }
+

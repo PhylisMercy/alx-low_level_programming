@@ -16,12 +16,11 @@ int safe_close(int);
 int main(int argc, char *argv[])
 {
 	char buffer[1024];
-
 	int bytes_read = 0, _EOF = 1, from_fd = -1, to_fd = -1, error = 0;
 
 	if (argc != 3)
 	{
-		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n")
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
 
@@ -55,7 +54,7 @@ int main(int argc, char *argv[])
 		bytes_read += _EOF;
 		error = write(to_fd, buffer, _EOF);
 		if (error < 0)
-	{
+		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 			safe_close(from_fd);
 			safe_close(to_fd);

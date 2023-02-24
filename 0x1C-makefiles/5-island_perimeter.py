@@ -1,5 +1,9 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
+"""
+Created on Fri Feb 24  16:40 2023
+@author: Phylis Mercy
+"""
 
 def island_perimeter(grid):
     """
